@@ -1,0 +1,33 @@
+
+[
+ {
+ "id": 1,
+ "name": "Braised Pork Apricots and Currants",
+ "description": "Salty and sweet",
+ "image": "https://s3.amazonaws.com/plated-engineering/images/Braised_Pork_Apricots_and_Currants_with_Roasted_Fingerling_Potatoes.jpg"
+ },
+ {
+ "id": 2,
+ "name": "Caprese Chicken over Warm Spinach Salad",
+ "description": "Extra crispy",
+ "image": "https://s3.amazonaws.com/plated-engineering/images/Caprese_Chicken_over_Warm_Spinach_Salad.jpg"
+ },
+ {
+ "id": 3,
+ "name": "Chicken and Coconut Soup",
+ "description": "Thai favorite, spicy",
+ "image": "https://s3.amazonaws.com/plated-engineering/images/Chicken_and_Coconut_Soup_with_Mushrooms_and_Sticky_Rice.jpg"
+ },
+ {
+ "id": 4,
+ "name": "Creamy Chicken Fettuccine with Fennel",
+ "description": "Rich and cheesy",
+ "image": "https://s3.amazonaws.com/plated-engineering/images/Creamy_Chicken_Fettuccine_with_Fennel__Peas__and_Mint.jpg"
+ },
+ {
+ "id": 5,
+ "name": "French Onion Soup burgers",
+ "description": "Fan favorite",
+ "image": "https://s3.amazonaws.com/plated-engineering/images/French_Onion_Soup_Burgers.jpg"
+ }
+ ]
