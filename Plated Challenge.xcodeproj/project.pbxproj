@@ -22,7 +22,7 @@
 		9E328BBB20C3388C00145E46 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E328BBA20C3388C00145E46 /* recipes.json */; };
 		9E328BC020C33A6500145E46 /* MenusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328BBF20C33A6500145E46 /* MenusTableViewController.swift */; };
 		9E328BC220C33A8500145E46 /* MenusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328BC120C33A8500145E46 /* MenusViewModel.swift */; };
-		9E328BC520C33B6700145E46 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328BC420C33B6700145E46 /* URLBuilder.swift */; };
+		9E328BC520C33B6700145E46 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328BC420C33B6700145E46 /* UrlBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		9E328BBA20C3388C00145E46 /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		9E328BBF20C33A6500145E46 /* MenusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusTableViewController.swift; sourceTree = "<group>"; };
 		9E328BC120C33A8500145E46 /* MenusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusViewModel.swift; sourceTree = "<group>"; };
-		9E328BC420C33B6700145E46 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		9E328BC420C33B6700145E46 /* UrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +160,7 @@
 				9E328B7A20C1E79D00145E46 /* AppDelegate.swift */,
 				9E328B8120C1E79F00145E46 /* Assets.xcassets */,
 				9E328B8620C1E79F00145E46 /* Info.plist */,
+				9E328BC420C33B6700145E46 /* UrlBuilder.swift */,
 				9E328BB420C1EE0700145E46 /* URLSessionTest.swift */,
 			);
 			path = "Supporting Files";
@@ -203,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				9E328BB620C3343300145E46 /* AppError.swift */,
-				9E328BC420C33B6700145E46 /* URLBuilder.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -343,7 +343,7 @@
 			files = (
 				9E328B7B20C1E79D00145E46 /* AppDelegate.swift in Sources */,
 				9E328BB120C1EB8D00145E46 /* Menu.swift in Sources */,
-				9E328BC520C33B6700145E46 /* URLBuilder.swift in Sources */,
+				9E328BC520C33B6700145E46 /* UrlBuilder.swift in Sources */,
 				9E328BAA20C1E88200145E46 /* APIClient.swift in Sources */,
 				9E328BC220C33A8500145E46 /* MenusViewModel.swift in Sources */,
 				9E328BC020C33A6500145E46 /* MenusTableViewController.swift in Sources */,

@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="217" y="303"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Plated Menus-->
         <scene sceneID="2MG-bD-ttz">
             <objects>
                 <tableViewController id="wAR-3t-JWz" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Qxc-0Y-aNj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" id="Qxc-0Y-aNj">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qxc-0Y-aNj" id="vx5-7S-x2K">
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="wAR-3t-JWz" id="dW4-ha-Smt"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jIV-Et-lH2"/>
+                    <navigationItem key="navigationItem" title="Plated Menus" id="jIV-Et-lH2"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgY-Mc-fai" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -15,7 +15,7 @@ class UrlBuilder {
 
     enum UrlAccess: String {
         case menus = "menus/"
-        case recipes = "recipes/"
+        case recipes = "/recipes/"
     }
 
     func getURLforMenu(at id: Int? = nil) -> URL? {
