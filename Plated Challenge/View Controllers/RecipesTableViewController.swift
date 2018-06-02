@@ -1,5 +1,5 @@
 //
-//  MenusTableViewController.swift
+//  RecipesTableViewController.swift
 //  Plated Challenge
 //
 //  Created by Victor Zhong on 6/2/18.
@@ -8,15 +8,17 @@
 
 import UIKit
 
-class MenusTableViewController: UITableViewController {
+class RecipesTableViewController: UITableViewController {
 
-    var viewModel: MenusViewModel!
+    var menu: Menu!
+    var apiClient: APIClient!
+    var viewModel: RecipesViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        viewModel = MenusViewModel(with: APIClient())
-        viewModel.getMenus { [weak self] in
+
+        viewModel = RecipesViewModel(with: apiClient, menu: menu)
+        viewModel.getRecipes { [weak self] in
             self?.tableView.reloadData()
         }
     }
@@ -28,12 +30,21 @@ class MenusTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath)
 
-        cell.textLabel?.text = viewModel.menuTitleToDisplay(for: indexPath)
+        cell.textLabel?.text = viewModel.recipeNameToDisplay(for: indexPath)
+        cell.detailTextLabel?.text = viewModel.recipeDescriptionToDisplay(for: indexPath)
 
         return cell
     }
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
 
     /*
     // Override to support editing the table view.

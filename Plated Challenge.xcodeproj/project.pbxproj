@@ -23,6 +23,8 @@
 		9E328BC020C33A6500145E46 /* MenusTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328BBF20C33A6500145E46 /* MenusTableViewController.swift */; };
 		9E328BC220C33A8500145E46 /* MenusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328BC120C33A8500145E46 /* MenusViewModel.swift */; };
 		9E328BC520C33B6700145E46 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328BC420C33B6700145E46 /* UrlBuilder.swift */; };
+		9EB6C3A220C3613800BCDE65 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A120C3613800BCDE65 /* RecipesTableViewController.swift */; };
+		9EB6C3A420C3615000BCDE65 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		9E328BBF20C33A6500145E46 /* MenusTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusTableViewController.swift; sourceTree = "<group>"; };
 		9E328BC120C33A8500145E46 /* MenusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusViewModel.swift; sourceTree = "<group>"; };
 		9E328BC420C33B6700145E46 /* UrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
+		9EB6C3A120C3613800BCDE65 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
+		9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				9E328BBF20C33A6500145E46 /* MenusTableViewController.swift */,
+				9EB6C3A120C3613800BCDE65 /* RecipesTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -187,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				9E328BC120C33A8500145E46 /* MenusViewModel.swift */,
+				9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -344,7 +350,9 @@
 				9E328B7B20C1E79D00145E46 /* AppDelegate.swift in Sources */,
 				9E328BB120C1EB8D00145E46 /* Menu.swift in Sources */,
 				9E328BC520C33B6700145E46 /* UrlBuilder.swift in Sources */,
+				9EB6C3A420C3615000BCDE65 /* RecipesViewModel.swift in Sources */,
 				9E328BAA20C1E88200145E46 /* APIClient.swift in Sources */,
+				9EB6C3A220C3613800BCDE65 /* RecipesTableViewController.swift in Sources */,
 				9E328BC220C33A8500145E46 /* MenusViewModel.swift in Sources */,
 				9E328BC020C33A6500145E46 /* MenusTableViewController.swift in Sources */,
 				9E328BB520C1EE0700145E46 /* URLSessionTest.swift in Sources */,
