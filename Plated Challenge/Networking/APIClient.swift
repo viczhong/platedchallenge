@@ -14,7 +14,10 @@ class APIClient {
 
     func performDataTask(with url: URL, completionHandler: @escaping (Data) -> Void, errorHandler: @escaping (AppError) -> Void) {
 
-        let dataTask = defaultSession.dataTask(with: url) {
+        var request = URLRequest(url: url)
+        request.addValue("Token token=uDTZnGR4tFGLo1Pmizvi4Att", forHTTPHeaderField: "Authorization")
+
+        let dataTask = defaultSession.dataTask(with: request) {
             (data: Data?, response: URLResponse?, error: Error?) in
             DispatchQueue.main.async {
                 if let error = error {

@@ -14,25 +14,28 @@ class MenusTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = MenusViewModel()
+        
+        viewModel = MenusViewModel(with: APIClient())
+        viewModel.getMenus {
+            self.tableView.reloadData()
+        }
     }
 
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return viewModel.numberOfItemsToDisplay(in: section)
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath)
+
+        cell.textLabel?.text = viewModel.menuTitleToDisplay(for: indexPath)
 
         return cell
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.

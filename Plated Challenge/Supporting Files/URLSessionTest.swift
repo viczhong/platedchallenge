@@ -13,6 +13,7 @@ import Foundation
 
 public protocol MockableURLSession {
     func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
+    func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
 }
 
 extension URLSession: MockableURLSession {}
@@ -29,6 +30,12 @@ public final class URLSessionMock : MockableURLSession {
 
     public func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         self.url = url
+        self.dataTaskMock.completionHandler = completionHandler
+        return self.dataTaskMock
+    }
+
+    public func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        self.request = request
         self.dataTaskMock.completionHandler = completionHandler
         return self.dataTaskMock
     }
