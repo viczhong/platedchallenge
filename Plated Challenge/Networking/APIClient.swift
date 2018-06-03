@@ -13,8 +13,8 @@ class APIClient {
     var defaultSession: MockableURLSession = URLSession(configuration: .default)
 
     func performDataTask(with url: URL, completionHandler: @escaping (Data) -> Void, errorHandler: @escaping (AppError) -> Void) {
-
         var request = URLRequest(url: url)
+
         request.addValue("Token token=uDTZnGR4tFGLo1Pmizvi4Att", forHTTPHeaderField: "Authorization")
 
         let dataTask = defaultSession.dataTask(with: request) {

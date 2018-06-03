@@ -10,6 +10,6 @@ import Foundation
 
 protocol ViewModel {}
 
+// These extensions are for testing purposes.
 extension RecipesViewModel: ViewModel {}
-
 extension MenusViewModel: ViewModel {}
