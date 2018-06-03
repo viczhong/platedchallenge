@@ -30,6 +30,8 @@
 		9EB6C3A420C3615000BCDE65 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */; };
 		9EB6C3A620C36A4600BCDE65 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A520C36A4600BCDE65 /* ViewModel.swift */; };
 		9EB6C3A820C36D6800BCDE65 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A720C36D6800BCDE65 /* ModelType.swift */; };
+		9EC38A1020C39A8100AF7D5F /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC38A0F20C39A8100AF7D5F /* RecipeDetailViewController.swift */; };
+		9EC38A1220C39D0F00AF7D5F /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC38A1120C39D0F00AF7D5F /* RecipeDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 		9EB6C3A520C36A4600BCDE65 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9EB6C3A720C36D6800BCDE65 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		9EC38A0F20C39A8100AF7D5F /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		9EC38A1120C39D0F00AF7D5F /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
 		9F59136BC45F8A963221C8CC /* Pods-Plated Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plated Challenge/Pods-Plated Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		CD060AC92486E66006929546 /* Pods-Plated ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plated ChallengeUITests/Pods-Plated ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9F183D206B3E0DA3B5F092D /* Pods-Plated ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plated ChallengeUITests/Pods-Plated ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -215,6 +219,7 @@
 			children = (
 				9E328BBF20C33A6500145E46 /* MenusTableViewController.swift */,
 				9EB6C3A120C3613800BCDE65 /* RecipesTableViewController.swift */,
+				9EC38A0F20C39A8100AF7D5F /* RecipeDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 			children = (
 				9E328BC120C33A8500145E46 /* MenusViewModel.swift */,
 				9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */,
+				9EC38A1120C39D0F00AF7D5F /* RecipeDetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -474,11 +480,13 @@
 			files = (
 				9E328B7B20C1E79D00145E46 /* AppDelegate.swift in Sources */,
 				9E328BB120C1EB8D00145E46 /* Menu.swift in Sources */,
+				9EC38A1020C39A8100AF7D5F /* RecipeDetailViewController.swift in Sources */,
 				9E328BC520C33B6700145E46 /* UrlBuilder.swift in Sources */,
 				9EB6C3A420C3615000BCDE65 /* RecipesViewModel.swift in Sources */,
 				9E328BAA20C1E88200145E46 /* APIClient.swift in Sources */,
 				9EB6C3A220C3613800BCDE65 /* RecipesTableViewController.swift in Sources */,
 				9E328BC220C33A8500145E46 /* MenusViewModel.swift in Sources */,
+				9EC38A1220C39D0F00AF7D5F /* RecipeDetailViewModel.swift in Sources */,
 				9E328BC020C33A6500145E46 /* MenusTableViewController.swift in Sources */,
 				9E328BB520C1EE0700145E46 /* URLSessionTest.swift in Sources */,
 				9E328BB320C1EC0200145E46 /* Recipe.swift in Sources */,
@@ -661,7 +669,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "$(SRCROOT)/Plated Challenge/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -677,7 +688,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "$(SRCROOT)/Plated Challenge/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -694,7 +708,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "Plated ChallengeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-ChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -712,7 +730,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "Plated ChallengeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-ChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -729,7 +751,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "Plated ChallengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-ChallengeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -746,7 +772,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "Plated ChallengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-ChallengeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

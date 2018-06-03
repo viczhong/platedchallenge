@@ -10,15 +10,13 @@ import UIKit
 
 class RecipesTableViewController: UITableViewController {
 
-    var menu: Menu!
-    var apiClient: APIClient!
     var viewModel: RecipesViewModel!
+    let segueName = "detailSegue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewModel = RecipesViewModel(with: apiClient, menu: menu)
-        title = viewModel.title()
+        title = viewModel.getMenuTitle()
 
         viewModel.getRecipes { [weak self] in
             self?.tableView.reloadData()
@@ -37,6 +35,7 @@ class RecipesTableViewController: UITableViewController {
         cell.imageView?.image = nil
         cell.textLabel?.text = viewModel.recipeNameToDisplay(for: indexPath)
         cell.detailTextLabel?.text = viewModel.recipeDescriptionToDisplay(for: indexPath)
+        
         viewModel.recipeImageToDisplay(for: indexPath, cell.imageView!) {
             cell.setNeedsLayout()
         }
@@ -47,8 +46,16 @@ class RecipesTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if
+            segue.identifier == segueName,
+            let cell = sender as? UITableViewCell,
+            let indexPath = tableView.indexPath(for: cell),
+            let recipeDetailViewController = segue.destination as? RecipeDetailViewController,
+            let recipeAtRow = viewModel.recipes?[indexPath.row] {
+            let recipeDetailViewModel = RecipeDetailViewModel(with: viewModel.apiClient, menu: viewModel.menu, recipe: recipeAtRow)
+
+            recipeDetailViewController.viewModel = recipeDetailViewModel
+        }
     }
 
 }

@@ -11,6 +11,7 @@ import UIKit
 class MenusTableViewController: UITableViewController {
 
     var viewModel: MenusViewModel!
+    let segueName = "recipesSegue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +39,14 @@ class MenusTableViewController: UITableViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if
-            segue.identifier == "recipesSegue",
+            segue.identifier == segueName,
             let cell = sender as? UITableViewCell,
             let indexPath = tableView.indexPath(for: cell),
-            let recipesTableViewController = segue.destination as? RecipesTableViewController {
-            recipesTableViewController.apiClient = viewModel.apiClient
-            recipesTableViewController.menu = viewModel.menus?[indexPath.row]
+            let recipesTableViewController = segue.destination as? RecipesTableViewController,
+            let menuAtRow = viewModel.menus?[indexPath.row] {
+            let recipesViewModel = RecipesViewModel(with: viewModel.apiClient, menu: menuAtRow)
+
+            recipesTableViewController.viewModel = recipesViewModel
         }
     }
 }

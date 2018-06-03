@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -91,6 +92,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="wcR-Yq-J6w" kind="show" identifier="detailSegue" id="8qe-6O-JoL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -102,6 +106,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUX-Jf-Yio" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1870" y="303"/>
+        </scene>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="YGU-KK-6NZ">
+            <objects>
+                <viewController id="wcR-Yq-J6w" customClass="RecipeDetailViewController" customModule="Plated_Challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AIj-Ph-EEF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohq-gL-afl">
+                                <rect key="frame" x="16" y="128" width="343" height="38"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UKm-z6-ffo">
+                                <rect key="frame" x="16" y="198" width="343" height="336"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Description Label!&quot; " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCE-5l-j6l">
+                                <rect key="frame" x="16" y="566" width="343" height="37"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UKm-z6-ffo" firstAttribute="leading" secondItem="OOK-DH-UGx" secondAttribute="leading" constant="16" id="BFI-f4-eW2"/>
+                            <constraint firstItem="OOK-DH-UGx" firstAttribute="trailing" secondItem="xCE-5l-j6l" secondAttribute="trailing" constant="16" id="Fkp-n1-2mh"/>
+                            <constraint firstItem="xCE-5l-j6l" firstAttribute="leading" secondItem="OOK-DH-UGx" secondAttribute="leading" constant="16" id="Iul-Bl-Gvz"/>
+                            <constraint firstItem="ohq-gL-afl" firstAttribute="leading" secondItem="OOK-DH-UGx" secondAttribute="leading" constant="16" id="NPz-sx-6tj"/>
+                            <constraint firstItem="xCE-5l-j6l" firstAttribute="top" secondItem="UKm-z6-ffo" secondAttribute="bottom" constant="32" id="S1N-nS-oYK"/>
+                            <constraint firstItem="OOK-DH-UGx" firstAttribute="trailing" secondItem="UKm-z6-ffo" secondAttribute="trailing" constant="16" id="Siz-3I-pnP"/>
+                            <constraint firstItem="OOK-DH-UGx" firstAttribute="trailing" secondItem="ohq-gL-afl" secondAttribute="trailing" constant="16" id="XkB-8v-Nud"/>
+                            <constraint firstItem="UKm-z6-ffo" firstAttribute="top" secondItem="ohq-gL-afl" secondAttribute="bottom" constant="32" id="Yx6-uc-8mg"/>
+                            <constraint firstItem="OOK-DH-UGx" firstAttribute="bottom" secondItem="xCE-5l-j6l" secondAttribute="bottom" constant="64" id="sOS-5U-uml"/>
+                            <constraint firstItem="ohq-gL-afl" firstAttribute="top" secondItem="OOK-DH-UGx" secondAttribute="top" constant="64" id="xuH-gV-4lp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OOK-DH-UGx"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="xCE-5l-j6l" id="TgI-qB-rWi"/>
+                        <outlet property="nameLabel" destination="ohq-gL-afl" id="a9f-go-3EN"/>
+                        <outlet property="recipeImageView" destination="UKm-z6-ffo" id="wCX-6D-1pb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3dC-ZS-XEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="303"/>
         </scene>
     </scenes>
 </document>

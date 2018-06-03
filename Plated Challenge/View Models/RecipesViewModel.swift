@@ -19,7 +19,7 @@ class RecipesViewModel {
         self.menu = menu
     }
 
-    func title() -> String {
+    func getMenuTitle() -> String {
         return menu.title
     }
 
