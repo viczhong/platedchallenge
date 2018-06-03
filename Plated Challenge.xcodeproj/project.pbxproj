@@ -32,6 +32,7 @@
 		9EB6C3A820C36D6800BCDE65 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A720C36D6800BCDE65 /* ModelType.swift */; };
 		9EC38A1020C39A8100AF7D5F /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC38A0F20C39A8100AF7D5F /* RecipeDetailViewController.swift */; };
 		9EC38A1220C39D0F00AF7D5F /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC38A1120C39D0F00AF7D5F /* RecipeDetailViewModel.swift */; };
+		9EC38A1520C3A6C300AF7D5F /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC38A1420C3A6C300AF7D5F /* RecipeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		9EB6C3A720C36D6800BCDE65 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		9EC38A0F20C39A8100AF7D5F /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		9EC38A1120C39D0F00AF7D5F /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
+		9EC38A1420C3A6C300AF7D5F /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		9F59136BC45F8A963221C8CC /* Pods-Plated Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plated Challenge/Pods-Plated Challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		CD060AC92486E66006929546 /* Pods-Plated ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plated ChallengeUITests/Pods-Plated ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9F183D206B3E0DA3B5F092D /* Pods-Plated ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plated ChallengeUITests/Pods-Plated ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				9E328BAB20C1E8A100145E46 /* Supporting Files */,
 				9E328BAD20C1E8B300145E46 /* View Controllers */,
 				9E328BAE20C1E8BC00145E46 /* View Models */,
+				9EC38A1320C3A6A900AF7D5F /* Views */,
 			);
 			path = "Plated Challenge";
 			sourceTree = "<group>";
@@ -251,6 +254,14 @@
 				9EB6C3A720C36D6800BCDE65 /* ModelType.swift */,
 			);
 			path = "Enums and Extensions";
+			sourceTree = "<group>";
+		};
+		9EC38A1320C3A6A900AF7D5F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EC38A1420C3A6C300AF7D5F /* RecipeTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F3C8A7CD8F13E8C137EB4B1E /* Pods */ = {
@@ -493,6 +504,7 @@
 				9EB6C3A620C36A4600BCDE65 /* ViewModel.swift in Sources */,
 				9EB6C3A820C36D6800BCDE65 /* ModelType.swift in Sources */,
 				9E328BB720C3343300145E46 /* AppError.swift in Sources */,
+				9EC38A1520C3A6C300AF7D5F /* RecipeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

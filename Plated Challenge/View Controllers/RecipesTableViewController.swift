@@ -16,6 +16,9 @@ class RecipesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.estimatedRowHeight = 115
+        tableView.rowHeight = UITableViewAutomaticDimension
+
         title = viewModel.getMenuTitle()
 
         viewModel.getRecipes { [weak self] in
@@ -30,13 +33,13 @@ class RecipesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath) as! RecipeTableViewCell
 
-        cell.imageView?.image = nil
-        cell.textLabel?.text = viewModel.recipeNameToDisplay(for: indexPath)
-        cell.detailTextLabel?.text = viewModel.recipeDescriptionToDisplay(for: indexPath)
+        cell.foodImage.image = nil
+        cell.nameLabel.text = viewModel.recipeNameToDisplay(for: indexPath)
+        cell.descriptionLabel?.text = viewModel.recipeDescriptionToDisplay(for: indexPath)
         
-        viewModel.recipeImageToDisplay(for: indexPath, cell.imageView!) {
+        viewModel.recipeImageToDisplay(for: indexPath, cell.foodImage!) {
             cell.setNeedsLayout()
         }
 
