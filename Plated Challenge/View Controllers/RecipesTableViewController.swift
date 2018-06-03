@@ -16,6 +16,8 @@ class RecipesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.accessibilityIdentifier = "recipesTableView"
+
         tableView.estimatedRowHeight = 115
         tableView.rowHeight = UITableViewAutomaticDimension
 

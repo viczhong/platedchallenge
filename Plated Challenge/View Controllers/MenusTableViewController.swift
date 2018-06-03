@@ -15,7 +15,9 @@ class MenusTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        tableView.accessibilityIdentifier = "menusTableView"
+
         viewModel = MenusViewModel(with: APIClient())
         viewModel.getMenus { [weak self] in
             self?.tableView.reloadData()

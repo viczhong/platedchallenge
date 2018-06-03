@@ -16,6 +16,7 @@ class Plated_ChallengeUITests: XCTestCase {
         super.setUp()
         
         continueAfterFailure = false
+
         app = XCUIApplication()
         app.launch()
     }
@@ -24,5 +25,18 @@ class Plated_ChallengeUITests: XCTestCase {
         app = nil
         super.tearDown()
     }
-    
+
+    func test_Segues() {
+        XCTAssertTrue(app.tables["menusTableView"].exists)
+
+        let tablesQuery = app.tables
+        tablesQuery/*@START_MENU_TOKEN@*/.cells.staticTexts["Lunch"]/*[[".cells.staticTexts[\"Lunch\"]",".staticTexts[\"Lunch\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+
+        XCTAssertTrue(app.tables["recipesTableView"].exists)
+
+        tablesQuery/*@START_MENU_TOKEN@*/.cells.staticTexts["Braised Pork Apricots and Currants"]/*[[".cells.staticTexts[\"Braised Pork Apricots and Currants\"]",".staticTexts[\"Braised Pork Apricots and Currants\"]"],[[[-1,1],[-1,0]]],[1]]@END_MENU_TOKEN@*/.tap()
+
+        XCTAssertTrue(app.otherElements["recipeDetailView"].exists)
+    }
 }
+

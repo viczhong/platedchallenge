@@ -18,6 +18,9 @@ class RecipeDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.accessibilityIdentifier = "recipeDetailView"
+        
         setupView()
     }
 
