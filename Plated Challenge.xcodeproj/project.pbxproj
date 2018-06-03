@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2952F2F4B4362DF03F4C82D0 /* Pods_Plated_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F886BBF379BB3315848781 /* Pods_Plated_ChallengeTests.framework */; };
+		3499ABFA752243FDBC4844A2 /* Pods_Plated_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A20889882E9F2413F5D745 /* Pods_Plated_Challenge.framework */; };
+		5A1F11B677B59804AD9114E5 /* Pods_Plated_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8E1CE2406FD80E1FCEDA90 /* Pods_Plated_ChallengeUITests.framework */; };
 		9E328B7B20C1E79D00145E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328B7A20C1E79D00145E46 /* AppDelegate.swift */; };
 		9E328B8020C1E79D00145E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E328B7E20C1E79D00145E46 /* Main.storyboard */; };
 		9E328B8220C1E79F00145E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E328B8120C1E79F00145E46 /* Assets.xcassets */; };
@@ -47,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6546298878693037667B26DB /* Pods-Plated ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated ChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plated ChallengeTests/Pods-Plated ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		66A20889882E9F2413F5D745 /* Pods_Plated_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plated_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C8E1CE2406FD80E1FCEDA90 /* Pods_Plated_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plated_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F886BBF379BB3315848781 /* Pods_Plated_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plated_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE89B66D43A5B137DD8B739 /* Pods-Plated ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated ChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plated ChallengeTests/Pods-Plated ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E2B90BDB59642D43B6B91FC /* Pods-Plated Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated Challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plated Challenge/Pods-Plated Challenge.release.xcconfig"; sourceTree = "<group>"; };
 		9E328B7720C1E79D00145E46 /* Plated Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plated Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E328B7A20C1E79D00145E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E328B7F20C1E79D00145E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +82,9 @@
 		9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
 		9EB6C3A520C36A4600BCDE65 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9EB6C3A720C36D6800BCDE65 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		9F59136BC45F8A963221C8CC /* Pods-Plated Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated Challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plated Challenge/Pods-Plated Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		CD060AC92486E66006929546 /* Pods-Plated ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated ChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Plated ChallengeUITests/Pods-Plated ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9F183D206B3E0DA3B5F092D /* Pods-Plated ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plated ChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Plated ChallengeUITests/Pods-Plated ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3499ABFA752243FDBC4844A2 /* Pods_Plated_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2952F2F4B4362DF03F4C82D0 /* Pods_Plated_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +108,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1F11B677B59804AD9114E5 /* Pods_Plated_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58D3656B3B48047912033D84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66A20889882E9F2413F5D745 /* Pods_Plated_Challenge.framework */,
+				81F886BBF379BB3315848781 /* Pods_Plated_ChallengeTests.framework */,
+				7C8E1CE2406FD80E1FCEDA90 /* Pods_Plated_ChallengeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E328B6E20C1E79C00145E46 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +132,8 @@
 				9E328B8E20C1E79F00145E46 /* Plated ChallengeTests */,
 				9E328B9920C1E79F00145E46 /* Plated ChallengeUITests */,
 				9E328B7820C1E79D00145E46 /* Products */,
+				F3C8A7CD8F13E8C137EB4B1E /* Pods */,
+				58D3656B3B48047912033D84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,6 +247,19 @@
 			path = "Enums and Extensions";
 			sourceTree = "<group>";
 		};
+		F3C8A7CD8F13E8C137EB4B1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F59136BC45F8A963221C8CC /* Pods-Plated Challenge.debug.xcconfig */,
+				8E2B90BDB59642D43B6B91FC /* Pods-Plated Challenge.release.xcconfig */,
+				8BE89B66D43A5B137DD8B739 /* Pods-Plated ChallengeTests.debug.xcconfig */,
+				6546298878693037667B26DB /* Pods-Plated ChallengeTests.release.xcconfig */,
+				CD060AC92486E66006929546 /* Pods-Plated ChallengeUITests.debug.xcconfig */,
+				F9F183D206B3E0DA3B5F092D /* Pods-Plated ChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E328B9F20C1E79F00145E46 /* Build configuration list for PBXNativeTarget "Plated Challenge" */;
 			buildPhases = (
+				ED56656DF2630BE4388D40CA /* [CP] Check Pods Manifest.lock */,
 				9E328B7320C1E79D00145E46 /* Sources */,
 				9E328B7420C1E79D00145E46 /* Frameworks */,
 				9E328B7520C1E79D00145E46 /* Resources */,
+				770863FA27E553EC43A5D771 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +286,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E328BA220C1E79F00145E46 /* Build configuration list for PBXNativeTarget "Plated ChallengeTests" */;
 			buildPhases = (
+				2A4644C0E3C8144FC6F5D069 /* [CP] Check Pods Manifest.lock */,
 				9E328B8720C1E79F00145E46 /* Sources */,
 				9E328B8820C1E79F00145E46 /* Frameworks */,
 				9E328B8920C1E79F00145E46 /* Resources */,
@@ -262,6 +305,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9E328BA520C1E79F00145E46 /* Build configuration list for PBXNativeTarget "Plated ChallengeUITests" */;
 			buildPhases = (
+				2D5F5F3AD1067561D1E3F0B8 /* [CP] Check Pods Manifest.lock */,
 				9E328B9220C1E79F00145E46 /* Sources */,
 				9E328B9320C1E79F00145E46 /* Frameworks */,
 				9E328B9420C1E79F00145E46 /* Resources */,
@@ -347,6 +391,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A4644C0E3C8144FC6F5D069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plated ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D5F5F3AD1067561D1E3F0B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plated ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770863FA27E553EC43A5D771 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Plated Challenge/Pods-Plated Challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Plated Challenge/Pods-Plated Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED56656DF2630BE4388D40CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Plated Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9E328B7320C1E79D00145E46 /* Sources */ = {
@@ -536,15 +655,13 @@
 		};
 		9E328BA020C1E79F00145E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F59136BC45F8A963221C8CC /* Pods-Plated Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "$(SRCROOT)/Plated Challenge/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -554,15 +671,13 @@
 		};
 		9E328BA120C1E79F00145E46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E2B90BDB59642D43B6B91FC /* Pods-Plated Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "$(SRCROOT)/Plated Challenge/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -572,17 +687,14 @@
 		};
 		9E328BA320C1E79F00145E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BE89B66D43A5B137DD8B739 /* Pods-Plated ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "Plated ChallengeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-ChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -593,17 +705,14 @@
 		};
 		9E328BA420C1E79F00145E46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6546298878693037667B26DB /* Pods-Plated ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "Plated ChallengeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-ChallengeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -614,16 +723,13 @@
 		};
 		9E328BA620C1E79F00145E46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD060AC92486E66006929546 /* Pods-Plated ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "Plated ChallengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-ChallengeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -634,16 +740,13 @@
 		};
 		9E328BA720C1E79F00145E46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F183D206B3E0DA3B5F092D /* Pods-Plated ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKDEZ4QK32;
 				INFOPLIST_FILE = "Plated ChallengeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viczhong.Plated-ChallengeUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

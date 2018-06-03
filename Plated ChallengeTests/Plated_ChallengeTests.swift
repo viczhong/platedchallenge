@@ -12,7 +12,7 @@ import XCTest
 class Plated_ChallengeTests: XCTestCase {
     var urlBuilderUnderTest: UrlBuilder!
     var menusViewModelUnderTest: MenusViewModel?
-    var recipesViewModelUndrerTest: RecipesViewModel?
+    var recipesViewModelUnderTest: RecipesViewModel?
     var apiClientUnderTest: APIClient?
 
     // MARK: - Test Setup
@@ -88,9 +88,9 @@ class Plated_ChallengeTests: XCTestCase {
                 apiClientUnderTest!)
             setUpMockSession(for: menusViewModelUnderTest!)
         case .recipes:
-            recipesViewModelUndrerTest = RecipesViewModel(with:
+            recipesViewModelUnderTest = RecipesViewModel(with:
                 apiClientUnderTest!, menu: Menu(id: 1, title: "Lunch"))
-            setUpMockSession(for: recipesViewModelUndrerTest!)
+            setUpMockSession(for: recipesViewModelUnderTest!)
         }
     }
 
@@ -123,20 +123,20 @@ class Plated_ChallengeTests: XCTestCase {
     func test_RecipesViewModel_ParseData() {
         setupGivenFor(modelType: .recipes)
 
-        XCTAssertEqual(recipesViewModelUndrerTest?.recipes?.count, 5, "RecipesViewModel.recipes should have 5 results")
+        XCTAssertEqual(recipesViewModelUnderTest?.recipes?.count, 5, "RecipesViewModel.recipes should have 5 results")
     }
 
     func test_RecipesViewModel_GetsNames() {
         setupGivenFor(modelType: .recipes)
 
-        XCTAssertEqual(recipesViewModelUndrerTest?.recipeNameToDisplay(for: [0, 0]), "Braised Pork Apricots and Currants", "Should be \"Braised Pork Apricots and Currants\"")
-        XCTAssertEqual(recipesViewModelUndrerTest?.recipeNameToDisplay(for: [0, 1]), "Caprese Chicken over Warm Spinach Salad", "Should be \"Caprese Chicken over Warm Spinach Salad\"")
+        XCTAssertEqual(recipesViewModelUnderTest?.recipeNameToDisplay(for: [0, 0]), "Braised Pork Apricots and Currants", "Should be \"Braised Pork Apricots and Currants\"")
+        XCTAssertEqual(recipesViewModelUnderTest?.recipeNameToDisplay(for: [0, 1]), "Caprese Chicken over Warm Spinach Salad", "Should be \"Caprese Chicken over Warm Spinach Salad\"")
     }
 
     func test_RecipesViewModel_GetsDescriptions() {
         setupGivenFor(modelType: .recipes)
 
-        XCTAssertEqual(recipesViewModelUndrerTest?.recipeDescriptionToDisplay(for: [0, 0]), "Salty and sweet", "Should be \"Salty and sweet\"")
-        XCTAssertEqual(recipesViewModelUndrerTest?.recipeDescriptionToDisplay(for: [0, 1]), "Extra crispy", "Should be \"Extra crispy\"")
+        XCTAssertEqual(recipesViewModelUnderTest?.recipeDescriptionToDisplay(for: [0, 0]), "Salty and sweet", "Should be \"Salty and sweet\"")
+        XCTAssertEqual(recipesViewModelUnderTest?.recipeDescriptionToDisplay(for: [0, 1]), "Extra crispy", "Should be \"Extra crispy\"")
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Kingfisher
 
 class RecipesViewModel {
     var apiClient: APIClient!
@@ -56,5 +57,17 @@ class RecipesViewModel {
 
     func recipeDescriptionToDisplay(for indexPath: IndexPath) -> String {
         return recipes?[indexPath.row].description ?? ""
+    }
+
+    func recipeImageToDisplay(for indexPath: IndexPath, _ imageView: UIImageView, _ completionHandler: @escaping () -> Void) {
+        guard let urlString = recipes?[indexPath.row].image else { return }
+        guard let url = URL(string: urlString) else { return }
+
+        imageView.kf.setImage(with: url) { (image, _, _, _) in
+            if let _ = image {
+                completionHandler()
+            }
+        }
+
     }
 }

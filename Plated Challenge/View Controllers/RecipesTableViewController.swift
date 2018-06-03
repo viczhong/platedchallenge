@@ -34,8 +34,12 @@ class RecipesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell", for: indexPath)
 
+        cell.imageView?.image = nil
         cell.textLabel?.text = viewModel.recipeNameToDisplay(for: indexPath)
         cell.detailTextLabel?.text = viewModel.recipeDescriptionToDisplay(for: indexPath)
+        viewModel.recipeImageToDisplay(for: indexPath, cell.imageView!) {
+            cell.setNeedsLayout()
+        }
 
         return cell
     }
