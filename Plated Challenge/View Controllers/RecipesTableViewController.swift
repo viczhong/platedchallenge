@@ -55,7 +55,7 @@ class RecipesTableViewController: UITableViewController {
             let indexPath = tableView.indexPath(for: cell),
             let recipeDetailViewController = segue.destination as? RecipeDetailViewController,
             let recipeAtRow = viewModel.recipes?[indexPath.row] {
-            let recipeDetailViewModel = RecipeDetailViewModel(with: viewModel.apiClient, menu: viewModel.menu, recipe: recipeAtRow)
+            let recipeDetailViewModel = RecipeDetailViewModel(with:  viewModel.menu, recipe: recipeAtRow)
 
             recipeDetailViewController.viewModel = recipeDetailViewModel
         }

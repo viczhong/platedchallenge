@@ -13,6 +13,7 @@ class Plated_ChallengeTests: XCTestCase {
     var urlBuilderUnderTest: UrlBuilder!
     var menusViewModelUnderTest: MenusViewModel?
     var recipesViewModelUnderTest: RecipesViewModel?
+    var recipeDetailViewModelUnderTest: RecipeDetailViewModel?
     var apiClientUnderTest: APIClient?
 
     // MARK: - Test Setup
@@ -25,6 +26,7 @@ class Plated_ChallengeTests: XCTestCase {
     override func tearDown() {
         urlBuilderUnderTest = nil
         menusViewModelUnderTest = nil
+        recipeDetailViewModelUnderTest = nil
         apiClientUnderTest = nil
 
         super.tearDown()
@@ -94,6 +96,13 @@ class Plated_ChallengeTests: XCTestCase {
         }
     }
 
+    func setupGivenForRecipeDetailViewModel() {
+        let menu = Menu(id: 1, title: "Lunch")
+        let recipe = Recipe(id: 1, name: "Braised Pork Apricots and Currants", description: "Salty and sweet", image: "https://s3.amazonaws.com/plated-engineering/images/Braised_Pork_Apricots_and_Currants_with_Roasted_Fingerling_Potatoes.jpg")
+
+        recipeDetailViewModelUnderTest = RecipeDetailViewModel(with: menu, recipe: recipe)
+    }
+
     // MARK: - Tests
 
     func test_UrlBuilder_results() {
@@ -139,4 +148,19 @@ class Plated_ChallengeTests: XCTestCase {
         XCTAssertEqual(recipesViewModelUnderTest?.recipeDescriptionToDisplay(for: [0, 0]), "Salty and sweet", "Should be \"Salty and sweet\"")
         XCTAssertEqual(recipesViewModelUnderTest?.recipeDescriptionToDisplay(for: [0, 1]), "Extra crispy", "Should be \"Extra crispy\"")
     }
+
+    // MARK: RecipeDetailViewModelTests
+
+    func test_RecipeDetailViewModel_GetsNames() {
+        setupGivenForRecipeDetailViewModel()
+
+        XCTAssertEqual(recipeDetailViewModelUnderTest?.getRecipeName(), "Braised Pork Apricots and Currants", "Recipe Name is wrong")
+    }
+
+    func test_RecipeDetailViewModel_GetsDescription() {
+        setupGivenForRecipeDetailViewModel()
+
+        XCTAssertEqual(recipeDetailViewModelUnderTest?.getDescription(), "\"Salty and sweet!\"", "Description is wrong")
+    }
+
 }

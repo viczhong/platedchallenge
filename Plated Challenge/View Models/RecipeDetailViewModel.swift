@@ -10,12 +10,10 @@ import UIKit
 import Kingfisher
 
 class RecipeDetailViewModel {
-    var apiClient: APIClient!
     var menu: Menu!
     var recipe: Recipe!
 
-    init(with apiClient: APIClient, menu: Menu, recipe: Recipe) {
-        self.apiClient = apiClient
+    init(with menu: Menu, recipe: Recipe) {
         self.menu = menu
         self.recipe = recipe
     }
