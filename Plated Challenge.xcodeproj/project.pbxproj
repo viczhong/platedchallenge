@@ -250,8 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				9E328BB620C3343300145E46 /* AppError.swift */,
-				9EB6C3A520C36A4600BCDE65 /* ViewModel.swift */,
 				9EB6C3A720C36D6800BCDE65 /* ModelType.swift */,
+				9EB6C3A520C36A4600BCDE65 /* ViewModel.swift */,
 			);
 			path = "Enums and Extensions";
 			sourceTree = "<group>";
