@@ -25,6 +25,8 @@
 		9E328BC520C33B6700145E46 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E328BC420C33B6700145E46 /* UrlBuilder.swift */; };
 		9EB6C3A220C3613800BCDE65 /* RecipesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A120C3613800BCDE65 /* RecipesTableViewController.swift */; };
 		9EB6C3A420C3615000BCDE65 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */; };
+		9EB6C3A620C36A4600BCDE65 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A520C36A4600BCDE65 /* ViewModel.swift */; };
+		9EB6C3A820C36D6800BCDE65 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6C3A720C36D6800BCDE65 /* ModelType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		9E328BC420C33B6700145E46 /* UrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
 		9EB6C3A120C3613800BCDE65 /* RecipesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTableViewController.swift; sourceTree = "<group>"; };
 		9EB6C3A320C3615000BCDE65 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		9EB6C3A520C36A4600BCDE65 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9EB6C3A720C36D6800BCDE65 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,7 @@
 		9E328B7920C1E79D00145E46 /* Plated Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				9E328BC320C33B3500145E46 /* Enums */,
+				9E328BC320C33B3500145E46 /* Enums and Extensions */,
 				9E328BAC20C1E8AF00145E46 /* Models */,
 				9E328BA820C1E87000145E46 /* Networking */,
 				9E328BAF20C1E8D700145E46 /* Storyboards */,
@@ -206,12 +210,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		9E328BC320C33B3500145E46 /* Enums */ = {
+		9E328BC320C33B3500145E46 /* Enums and Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				9E328BB620C3343300145E46 /* AppError.swift */,
+				9EB6C3A520C36A4600BCDE65 /* ViewModel.swift */,
+				9EB6C3A720C36D6800BCDE65 /* ModelType.swift */,
 			);
-			path = Enums;
+			path = "Enums and Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +363,8 @@
 				9E328BC020C33A6500145E46 /* MenusTableViewController.swift in Sources */,
 				9E328BB520C1EE0700145E46 /* URLSessionTest.swift in Sources */,
 				9E328BB320C1EC0200145E46 /* Recipe.swift in Sources */,
+				9EB6C3A620C36A4600BCDE65 /* ViewModel.swift in Sources */,
+				9EB6C3A820C36D6800BCDE65 /* ModelType.swift in Sources */,
 				9E328BB720C3343300145E46 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,6 +18,8 @@ class RecipesTableViewController: UITableViewController {
         super.viewDidLoad()
 
         viewModel = RecipesViewModel(with: apiClient, menu: menu)
+        title = viewModel.title()
+
         viewModel.getRecipes { [weak self] in
             self?.tableView.reloadData()
         }

@@ -13,13 +13,8 @@ class UrlBuilder {
     static let manager = UrlBuilder()
     private init() {}
 
-    enum UrlAccess: String {
-        case menus = "menus/"
-        case recipes = "/recipes/"
-    }
-
     func getURLforMenu(at id: Int? = nil) -> URL? {
-        var urlString = baseURL + UrlAccess.menus.rawValue
+        var urlString = baseURL + ModelType.menus.rawValue
 
         if let id = id {
             urlString += String(id)
@@ -31,7 +26,7 @@ class UrlBuilder {
     }
 
     func getURLforRecipe(at menu: Int, for recipeID: Int? = nil) -> URL? {
-        var urlString = baseURL + UrlAccess.menus.rawValue + String(menu) + UrlAccess.recipes.rawValue
+        var urlString = baseURL + ModelType.menus.rawValue + String(menu) + ModelType.recipes.rawValue
 
         if let id = recipeID {
             urlString += String(id)

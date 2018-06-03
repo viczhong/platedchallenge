@@ -18,6 +18,10 @@ class RecipesViewModel {
         self.menu = menu
     }
 
+    func title() -> String {
+        return menu.title
+    }
+
     func getRecipes(_ completionHandler: @escaping () -> Void) {
         guard let recipesURL = UrlBuilder.manager.getURLforRecipe(at: menu.id) else { return }
 
