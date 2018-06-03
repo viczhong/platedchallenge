@@ -80,13 +80,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="jEF-7r-Lit">
-                                            <rect key="frame" x="20" y="15" width="75" height="85"/>
+                                            <rect key="frame" x="20" y="15" width="75" height="75"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="jEF-7r-Lit" secondAttribute="height" multiplier="1:1" priority="750" id="Hb2-v0-kLt"/>
+                                                <constraint firstAttribute="width" secondItem="jEF-7r-Lit" secondAttribute="height" multiplier="1:1" id="Hb2-v0-kLt"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yYd-N5-S73">
-                                            <rect key="frame" x="111" y="37.5" width="232" height="41"/>
+                                            <rect key="frame" x="111" y="32.5" width="232" height="41"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRE-l5-xeJ">
                                                     <rect key="frame" x="0.0" y="0.0" width="232" height="20.5"/>
@@ -108,7 +108,7 @@
                                         <constraint firstItem="yYd-N5-S73" firstAttribute="leading" secondItem="jEF-7r-Lit" secondAttribute="trailing" constant="16" id="FCn-I6-8eG"/>
                                         <constraint firstItem="jEF-7r-Lit" firstAttribute="leading" secondItem="MbU-g3-x6d" secondAttribute="leadingMargin" constant="4" id="Jda-HU-3zV"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="yYd-N5-S73" secondAttribute="trailing" constant="16" id="WH1-yZ-EjK"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="jEF-7r-Lit" secondAttribute="bottom" constant="4" id="nIz-kd-5B3"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="jEF-7r-Lit" secondAttribute="bottom" priority="750" constant="4" id="nIz-kd-5B3"/>
                                         <constraint firstItem="jEF-7r-Lit" firstAttribute="width" secondItem="MbU-g3-x6d" secondAttribute="width" multiplier="0.2" id="uOG-Ze-u9P"/>
                                         <constraint firstItem="jEF-7r-Lit" firstAttribute="top" secondItem="MbU-g3-x6d" secondAttribute="topMargin" constant="4" id="zEO-od-FUZ"/>
                                     </constraints>
